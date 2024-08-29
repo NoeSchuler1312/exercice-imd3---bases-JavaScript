@@ -12,6 +12,11 @@ Créez des variables pour chacune des informations suivantes:
 Pensez donc à utiliser les mots-clés appropriés lorsque vous déclarez les variables (let / const).
 */
 
+let firstName = "Noé";
+let lastName = "Schüler";
+let age = 20;
+let city = "Fribourg";
+
 // -----------------------------------------------------------------------------------
 
 /*
@@ -21,6 +26,12 @@ Exercice 2:
 Créez une fonction nommée "birthday". Celle-ci vient ajouter 1 an à votre âge.
 🚨 Réutilisez bien sûr la variable du 1er exercice.
 */
+
+function birthday(age) {
+  return age + 1;
+}
+
+birthday(20);
 
 // -----------------------------------------------------------------------------------
 
@@ -33,6 +44,14 @@ Le but de cette fonction est donc de modifier la valeur de la variable "city" cr
 🚨 Réutilisez bien sûr la variable du 1er exercice.
 */
 
+function changeCity(city) {
+  return city;
+}
+
+changeCity("Berne");
+
+// -----------------------------------------------------------------------------------
+
 /*
 Exercice 4 (avancé):
 -------------
@@ -44,6 +63,12 @@ Par exemple: mon prénom est John, mon nom Smith. J'aimerais que ma fonction ret
 
 Indice: vous pouvez vous aider de la "concaténation" (https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Strings#concat%C3%A9nation_de_cha%C3%AEnes)
 */
+
+function fullName() {
+  return firstName + " " + lastName;
+}
+
+fullName();
 
 // <!----- NE PAS TOUCHER - UTILISER POUR LES TESTS ------------!>
 module.exports = {};
